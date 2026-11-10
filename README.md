@@ -4,26 +4,15 @@
 
 <br/>
 
-![Kotlin](https://img.shields.io/badge/Kotlin-5B4FE0?style=for-the-badge&logo=kotlin&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-5B4FE0?style=for-the-badge&logo=jetpackcompose&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-5B4FE0?style=for-the-badge&logo=firebase&logoColor=white)
-![Python](https://img.shields.io/badge/Python-5B4FE0?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5B4FE0?style=for-the-badge&logo=typescript&logoColor=white)
-![Astro](https://img.shields.io/badge/Astro-5B4FE0?style=for-the-badge&logo=astro&logoColor=white)
-
 **I build Android apps that do one job well, from the app and its backend to the store listing.**
-<br/>
+
 6 apps on Google Play · 1,300+ downloads · Bulgarian and English
 
 [**Portfolio site: izstudio.web.app**](https://izstudio.web.app)
 
-</div>
+<img src="assets/sec-apps.svg" alt="APPS" width="100%"/>
 
----
-
-## Apps
-
-Every app has its own look, taken from the product itself. Source code is private; each page below shows the product, the screens and how it is built.
+Every app has its own look, taken from the product itself. Source code is private; each page shows the product, the screens and how it is built.
 
 <table>
 <tr>
@@ -68,11 +57,17 @@ Every app has its own look, taken from the product itself. Source code is privat
 </td>
 <td></td></tr></table>
 
-## Also on this profile
 
-- [thornvael](https://github.com/ivaylozhivkov88/thornvael): a dark-fantasy real-time squad RPG for the browser (work in progress)
+<img src="assets/sec-stack.svg" alt="STACK" width="100%"/>
 
-## How I work
+![Kotlin](https://img.shields.io/badge/Kotlin-0F1638?style=for-the-badge&labelColor=0A0F2A&color=2A46FF&logo=kotlin&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-0F1638?style=for-the-badge&labelColor=0A0F2A&color=2A46FF&logo=jetpackcompose&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-0F1638?style=for-the-badge&labelColor=0A0F2A&color=2A46FF&logo=firebase&logoColor=white)
+![Python](https://img.shields.io/badge/Python-0F1638?style=for-the-badge&labelColor=0A0F2A&color=2A46FF&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-0F1638?style=for-the-badge&labelColor=0A0F2A&color=2A46FF&logo=typescript&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro-0F1638?style=for-the-badge&labelColor=0A0F2A&color=2A46FF&logo=astro&logoColor=white)
+
+
 
 | | |
 |---|---|
@@ -81,10 +76,16 @@ Every app has its own look, taken from the product itself. Source code is privat
 | **Web** | Astro, Tailwind, static sites on Firebase Hosting with strict security headers |
 | **Quality** | Written audits, lint and unit-test gates, security-rule tests, secrets kept out of repositories |
 
----
+<img src="assets/sec-progress.svg" alt="PROGRESS" width="100%"/>
 
-<div align="center">
+<img src="assets/progress.svg" alt="Portfolio progress" width="100%"/>
 
-Contact and everything else: [izstudio.web.app](https://izstudio.web.app)
+Also in progress: [thornvael](https://github.com/ivaylozhivkov88/thornvael), a dark-fantasy real-time squad RPG for the browser.
+
+<img src="assets/sec-contact.svg" alt="CONTACT" width="100%"/>
+
+[**izstudio.web.app**](https://izstudio.web.app)
+
+<img src="assets/footer.svg" alt="online now" width="100%"/>
 
 </div>
