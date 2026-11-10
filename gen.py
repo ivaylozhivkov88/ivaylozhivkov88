@@ -51,17 +51,12 @@ hdr = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 <rect x="6" y="6" width="{W-12}" height="{H-12}" fill="none" stroke="{LINE}" stroke-width="4"/>
 <rect x="14" y="14" width="{W-28}" height="{H-28}" fill="none" stroke="{LINE}" stroke-opacity="0.35" stroke-width="2"/>
 <text x="56" y="70" class="t" font-size="20" fill="{D}" letter-spacing="4">&gt; HELLO, WORLD. I AM</text>
-<text x="56" y="150" class="t" font-size="76" fill="{G}" letter-spacing="3" style="animation:glow 3s ease-in-out infinite">IVAYLO ZHIVKOV</text>
-<rect x="1010" y="104" width="30" height="52" fill="{G}" style="animation:blink 1s steps(1) infinite"/>
-<text x="56" y="200" class="t" font-size="26" fill="{C}" letter-spacing="2">[ INDEPENDENT ANDROID DEVELOPER ]</text>
-<rect x="56" y="232" width="248" height="62" fill="{PANEL}" stroke="{G}" stroke-width="2"/>
-<text x="76" y="272" class="t" font-size="30" fill="{G}">6</text><text x="108" y="272" class="t" font-size="15" fill="{T}">APPS ON GOOGLE PLAY</text>
-<rect x="324" y="232" width="248" height="62" fill="{PANEL}" stroke="{C}" stroke-width="2"/>
-<text x="344" y="272" class="t" font-size="30" fill="{C}">1,300+</text><text x="446" y="272" class="t" font-size="15" fill="{T}">DOWNLOADS</text>
-<rect x="592" y="232" width="248" height="62" fill="{PANEL}" stroke="{M}" stroke-width="2"/>
-<text x="612" y="272" class="t" font-size="30" fill="{M}">9</text><text x="644" y="272" class="t" font-size="15" fill="{T}">PROJECT SHOWCASES</text>
-<rect x="860" y="232" width="284" height="62" fill="{PANEL}" stroke="{Y}" stroke-width="2"/>
-<text x="880" y="272" class="t" font-size="30" fill="{Y}">BG|EN</text><text x="972" y="272" class="t" font-size="15" fill="{T}">TWO LANGUAGES</text>
+<text x="56" y="150" class="t" font-size="76" fill="{G}" letter-spacing="3" style="animation:glow 3s ease-in-out infinite">IVAYLO ZHIVKOV<tspan fill="{G}" style="animation:blink 1s steps(1) infinite">_</tspan></text>
+<text x="56" y="196" class="t" font-size="26" fill="{C}" letter-spacing="2">[ INDEPENDENT ANDROID DEVELOPER ]</text>
+<rect x="56" y="222" width="262" height="76" fill="{PANEL}" stroke="{G}" stroke-width="2"/><rect x="56" y="222" width="6" height="76" fill="{G}"/><text x="78" y="262" class="t" font-size="34" fill="{G}">6</text><text x="78" y="285" class="t" font-size="13" fill="{D}" letter-spacing="2">APPS ON GOOGLE PLAY</text>
+<rect x="332" y="222" width="262" height="76" fill="{PANEL}" stroke="{C}" stroke-width="2"/><rect x="332" y="222" width="6" height="76" fill="{C}"/><text x="354" y="262" class="t" font-size="34" fill="{C}">1,300+</text><text x="354" y="285" class="t" font-size="13" fill="{D}" letter-spacing="2">TOTAL DOWNLOADS</text>
+<rect x="608" y="222" width="262" height="76" fill="{PANEL}" stroke="{M}" stroke-width="2"/><rect x="608" y="222" width="6" height="76" fill="{M}"/><text x="630" y="262" class="t" font-size="34" fill="{M}">9</text><text x="630" y="285" class="t" font-size="13" fill="{D}" letter-spacing="2">PROJECT SHOWCASES</text>
+<rect x="884" y="222" width="262" height="76" fill="{PANEL}" stroke="{Y}" stroke-width="2"/><rect x="884" y="222" width="6" height="76" fill="{Y}"/><text x="906" y="262" class="t" font-size="34" fill="{Y}">BG | EN</text><text x="906" y="285" class="t" font-size="13" fill="{D}" letter-spacing="2">TWO LANGUAGES</text>
 <g transform="translate(0,306)">{walker(SLIME, 0, 16)}{walker(ROBOT, 4, 16)}{walker(KNIGHT, 8, 16)}{walker(BLOB, 12, 16)}</g>
 <rect x="14" y="356" width="{W-28}" height="3" fill="{LINE}" opacity="0.5"/>
 </svg>'''
@@ -125,3 +120,51 @@ ft = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBo
 </svg>'''
 open('assets/footer.svg', 'w', encoding='utf-8').write(ft)
 print('ok')
+
+# ---------- stack panel ----------
+rows=[("ANDROID",G,"Kotlin · Jetpack Compose · Hilt · Room · Media3 · WorkManager · Play Billing · AdMob"),
+      ("BACKEND",C,"Firebase (Firestore, Auth, Cloud Functions in TypeScript) · Python data pipelines"),
+      ("WEB",M,"Astro · Tailwind · static sites on Firebase Hosting with strict security headers"),
+      ("QUALITY",Y,"Written audits · lint and unit-test gates · security-rule tests · no secrets in repos")]
+W=1200;H=40+len(rows)*60
+p=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Stack"><defs>{STYLE}</defs><rect width="{W}" height="{H}" fill="{BG}"/><rect x="6" y="6" width="{W-12}" height="{H-12}" fill="{PANEL}" stroke="{LINE}" stroke-width="3"/>']
+for i,(k,c,t) in enumerate(rows):
+    y=26+i*60
+    p.append(f'<rect x="30" y="{y}" width="150" height="40" fill="none" stroke="{c}" stroke-width="2"/><rect x="30" y="{y}" width="8" height="40" fill="{c}"/><text x="112" y="{y+27}" text-anchor="middle" class="t" font-size="17" fill="{c}" letter-spacing="2">{k}</text>')
+    p.append(f'<text x="204" y="{y+27}" class="t" font-size="18" fill="{T}">{t}</text>')
+p.append('</svg>')
+open('assets/stack.svg','w',encoding='utf-8').write(''.join(p))
+
+# ---------- project cards ----------
+import base64,os
+SP=os.path.abspath('..')
+cards=[("isa","ISA","Grocery prices from six chains, side by side",G),
+("cdt","CRYPTODEPT TERMINAL","A multi-agent crypto intelligence terminal",C),
+("tarot","TAROT OF THE DAY","A daily reading in 13 languages",M),
+("sonirra","SONIRRA","A sleep-sounds mixer with timer",C),
+("cleanx","CLEANX MAX","A phone cleaner turned into a game",Y),
+("bgts","BG TOLL SPEED","Average-speed section control for drivers",G),
+("izstudio","IZ STUDIO","The bilingual portfolio site for all of the above",M),
+("nefera","NEFERA'S FORTUNE","An Egyptian slot game for the browser (in development)",Y),
+("fundsite","VIDIN FUND CHITALISHTA","A bilingual website with a CMS the team edits",G)]
+os.makedirs('assets/cards',exist_ok=True)
+for i,(d,t,sub,c) in enumerate(cards,1):
+    b64=base64.b64encode(open(f'{SP}/{d}/assets/banner.svg','rb').read()).decode()
+    W,H=1200,500
+    t=t.replace("'","&#39;")
+    sub=sub.replace("'","&#39;")
+    svg=f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{t}"><defs>{STYLE}</defs>
+<rect width="{W}" height="{H}" fill="{BG}"/>{grid(W,H)}
+<rect x="6" y="6" width="{W-12}" height="{H-12}" fill="none" stroke="{c}" stroke-width="4"/>
+<rect x="14" y="14" width="{W-28}" height="{H-28}" fill="none" stroke="{LINE}" stroke-opacity="0.45" stroke-width="2"/>
+<image x="36" y="40" width="1128" height="338" href="data:image/svg+xml;base64,{b64}"/>
+<rect x="36" y="40" width="1128" height="338" fill="none" stroke="{c}" stroke-opacity="0.6" stroke-width="2"/>
+<rect x="36" y="402" width="14" height="14" fill="{c}"/>
+<text x="62" y="416" class="t" font-size="30" fill="{T}" letter-spacing="2">{t}</text>
+<text x="36" y="458" class="t" font-size="22" fill="{D}">{sub}</text>
+<rect x="1058" y="392" width="106" height="40" fill="none" stroke="{c}" stroke-width="2"/>
+<text x="1111" y="420" text-anchor="middle" class="t" font-size="18" fill="{c}" letter-spacing="2">#{i:02d}</text>
+<text x="1164" y="468" text-anchor="end" class="t" font-size="16" fill="{c}" letter-spacing="2" style="animation:blink 1.6s steps(1) infinite">OPEN &gt;</text>
+</svg>'''
+    open(f'assets/cards/{d}.svg','w',encoding='utf-8').write(svg)
+print('cards ok')
