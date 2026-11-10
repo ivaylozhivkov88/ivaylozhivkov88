@@ -58,7 +58,10 @@ Every app has its own look, taken from the product itself. Source code is privat
 <a href="https://github.com/ivaylozhivkov88/iz-studio-website"><img src="https://raw.githubusercontent.com/ivaylozhivkov88/iz-studio-website/main/assets/banner.svg" alt="IZ Studio" width="100%"/></a>
 <br/><b>IZ Studio</b><br/><sub>The bilingual portfolio site for all of the above</sub>
 </td>
-<td></td></tr></table>
+<td width="50%" align="center" valign="top">
+<a href="https://github.com/ivaylozhivkov88/neferas-fortune"><img src="https://raw.githubusercontent.com/ivaylozhivkov88/neferas-fortune/main/assets/banner.svg" alt="Nefera's Fortune" width="100%"/></a>
+<br/><b>Nefera's Fortune</b><br/><sub>An Egyptian slot game for the browser (in development)</sub>
+</td></tr></table>
 
 ## Also on this profile
 
