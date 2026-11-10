@@ -61,7 +61,12 @@ Every app has its own look, taken from the product itself. Source code is privat
 <td width="50%" align="center" valign="top">
 <a href="https://github.com/ivaylozhivkov88/neferas-fortune"><img src="https://raw.githubusercontent.com/ivaylozhivkov88/neferas-fortune/main/assets/banner.svg" alt="Nefera's Fortune" width="100%"/></a>
 <br/><b>Nefera's Fortune</b><br/><sub>An Egyptian slot game for the browser (in development)</sub>
-</td></tr></table>
+</td></tr><tr>
+<td width="50%" align="center" valign="top">
+<a href="https://github.com/ivaylozhivkov88/vidin-fund-website"><img src="https://raw.githubusercontent.com/ivaylozhivkov88/vidin-fund-website/main/assets/banner.svg" alt="Vidin Fund website" width="100%"/></a>
+<br/><b>Vidin Fund "Chitalishta"</b><br/><sub>A bilingual website with a CMS the team edits</sub>
+</td>
+<td></td></tr></table>
 
 ## Also on this profile
 
