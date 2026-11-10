@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Ivaylo Zhivkov - Android developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15132B"/>
+      <stop offset="1" stop-color="#2a2466"/>
+    </linearGradient>
+    <style>
+      .t{font-family:'Segoe UI',Roboto,Arial,sans-serif}
+      .c{animation:c 7s ease-in-out infinite}
+      .c2{animation:c 7s ease-in-out infinite 2s}
+      .c3{animation:c 7s ease-in-out infinite 4s}
+      @keyframes c{50%{transform:translateY(-12px)}}
+    </style>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <g class="c"><circle cx="900" cy="90" r="34" fill="#FFB000"/></g>
+  <g class="c2"><circle cx="990" cy="190" r="34" fill="#0B8F75"/></g>
+  <g class="c3"><circle cx="1080" cy="80" r="34" fill="#6C8EF5"/></g>
+  <g class="c"><circle cx="1100" cy="210" r="22" fill="#FFD700"/></g>
+  <g class="c3"><circle cx="820" cy="200" r="22" fill="#4CC76A"/></g>
+  <g class="c2"><circle cx="1000" cy="60" r="16" fill="#E8C872"/></g>
+  <text x="70" y="130" class="t" font-size="30" fill="#C4C0FF">Hi, I'm</text>
+  <text x="70" y="205" class="t" font-size="80" font-weight="800" fill="#FFFFFF">Ivaylo Zhivkov</text>
+  <text x="70" y="255" class="t" font-size="28" fill="#E9E7FF">Independent Android developer · Bulgaria</text>
+</svg>
